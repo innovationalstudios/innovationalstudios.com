@@ -8,28 +8,6 @@
     <meta name="description" content="Kenneth Ishikawa is a bilingual web designer with experience in both web and print. His design work has driven results for companies such as AT&T, Microsoft, SimplyFun LLC, Pacific Software Publishing INC., and Virtual Network Support Japan. He has worked in both corporate environment, small business settings and as well as managed freelance projects. He is highly skilled in HTML, CSS, Photoshop, Illustrator, Fireworks, Flash, Premiere, After Effects, Dreamweaver, and advanced knowledge of JavaScript." />
     <title>Innovational Studios | Kenneth Ishikawa Design Portfolio</title>
     <meta property="og:image" content="http://innovationalstudios.com/images/homepage.png" />
-
-    
-    <!--  
-        Stylesheets and Preprocessors
-        ==============================
-
-        You can always bring in CSS files manually with `<link>` tags, or asynchronously
-        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage 
-        of Sails' conventional asset pipeline (boilerplate Gruntfile).
-
-        By default, stylesheets from your `assets/styles` folder are included
-        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
-        are supported. In production, your styles will be minified and concatenated into
-        a single file.
-        
-        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
-        For example, here are a few things you could do:
-            
-            + Change the order of your CSS files
-            + Import stylesheets from other directories
-            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
-    -->
     <!--STYLES-->
     <link rel="stylesheet" href="/styles/bootstrap.css">
     <link rel="stylesheet" href="/styles/importer.css">
@@ -57,6 +35,55 @@
       <div class="preview-container resize-container" id="rotate-area"><img src="#" id="rotatingElement" class="draggable"></div>
     </div>
     <!-- End Lightbox -->
+    <!-- Contact Me -->
+    <div class="contact-me">
+      <div class="options">
+        <div class="numberOfSlides">
+          <span>Contact Me</span> 
+        </div>
+        <a href="#close" class="close-contact"><span class="glyphicon glyphicon-remove"></span></a>
+      </div>
+      <div class="container">
+        <form class="form-horizontal" role="form" action="" method="post" id="contact-form">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="firstname">First Name:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control input-lg" id="firstname" name="firstname" placeholder="First Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="lastname">Last Name:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control input-lg" id="lastname" name="lastname" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="phone">Phone:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control input-lg" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control input-lg" id="email" name="email" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="message">Message:</label>
+            <div class="col-sm-10">
+              <textarea type="input" class="form-control input-lg" id="message" name="message" placeholder="Place your comments here." rows="4"></textarea>
+            </div>
+          </div>
+          <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <input type="submit" name="submit" value="Submit" class="btn btn-default input-lg" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact Me -->
     
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -71,9 +98,9 @@
         <!-- Push Menu Left -->
         <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="navbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./works">Works</a></li>
-            <li><a href="./about">About</a></li>
-            <li><a href="./process">Process</a></li>
+            <li><a href="/works">Works</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/process">Process</a></li>
             <li><a href="#contactme" class="trigger-contact">Contact Me</a></li>
           </ul>
         </div>
@@ -106,30 +133,6 @@
     <!--TEMPLATES-->
     
     <!--TEMPLATES END-->
-
-
-    <!--
-
-      Client-side Javascript
-      ========================
-
-      You can always bring in JS files manually with `script` tags, or asynchronously
-      on the client using a solution like AMD (RequireJS).  Or, if you like, you can 
-      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
-
-      By default, files in your `assets/js` folder are included here
-      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
-      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
-      and concatenated into a single file.
-      
-      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
-      For example, here are a few things you could do:
-          
-          + Change the order of your scripts
-          + Import scripts from other directories
-          + Use a different preprocessor, like TypeScript
-
-    -->
     <footer>
       <ul class="footer-navigation">
         <li><a href="/works">Works</a></li><!--
@@ -138,20 +141,20 @@
         --><li><a href="#contactme" class="trigger-contact">Contact Me</a></li>
       </ul>
     </footer>
-    <p class="copyright">Copyright &copy; 2015 innovationalstudios. All Rights Reserved.</p>
+    <p class="copyright">Copyright &copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, innovationalstudios. All Rights Reserved.</p>
 
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
-    <script src="/js/dependencies/1.11.1.jquery.min.js"></script>
-    <script src="/js/dependencies/angular.min.js"></script>
-    <script src="/js/dependencies/bootstrap.min.js"></script>
-    <script src="/js/dependencies/interact-1.2.4.min.js"></script>
-    <script src="/js/dependencies/jPushMenu.js"></script>
-    <script src="/js/dependencies/jquery.validate.min.js"></script>
-    <script src="/js/dependencies/lightbox.js"></script>
-    <script src="/js/dependencies/scripts.js"></script>
-    <script src="/js/dependencies/timeline_modernizr.js"></script>
-    <script src="/js/dependencies/timline.js"></script>
+    <script src="/js/dependencies/lib/1.11.1.jquery.min.js"></script>
+    <script src="/js/dependencies/lib/angular.min.js"></script>
+    <script src="/js/dependencies/lib/bootstrap.min.js"></script>
+    <script src="/js/interact-1.2.4.min.js"></script>
+    <script src="/js/jPushMenu.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/lightbox.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/timeline_modernizr.js"></script>
+    <script src="/js/timline.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
