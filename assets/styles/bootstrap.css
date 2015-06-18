@@ -4459,9 +4459,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav {
-    -webkit-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.6);
-    box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: inset -2px 0px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: inset -2px 0px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: inset -2px 0px 5px 0px rgba(0,0,0,0.6);
     background-color: #fff;
   }
   .navbar-default .navbar-nav > li > a {

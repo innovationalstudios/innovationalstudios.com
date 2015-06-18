@@ -7,7 +7,7 @@ Innovational Studios Styling
 /* ::: ALL PAGE DEFAULT SETTINGS::: */
 body {
   opacity: 0;
-  background-color: #0f0f0f;
+  background-color: #fff;
 }
 .textured-bg {
   padding: 70px 0;
@@ -1387,9 +1387,9 @@ Push Navgiation
     overflow-y:visible;
     display:block;
     visibility:visible;
-    -webkit-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.6);
-    box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: inset -2px 0px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: inset -2px 0px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: inset -2px 0px 5px 0px rgba(0,0,0,0.6);
   }
   .navbar-fixed-top .cbp-spmenu {
     bottom:0;
